@@ -2,8 +2,8 @@
 
 Summary:	Crypt-Twofish module for perl 
 Name:		perl-%{real_name}
-Version:	2.12
-Release:	%mkrel 4
+Version:	2.13
+Release:	%mkrel 1
 License:	GPL or Artistic
 Group:		Development/Perl
 URL:		http://search.cpan.org/dist/%{real_name}
