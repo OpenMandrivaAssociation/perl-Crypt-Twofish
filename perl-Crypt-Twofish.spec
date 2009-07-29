@@ -1,15 +1,18 @@
-%define real_name Crypt-Twofish
+%define upstream_name    Crypt-Twofish
+%define upstream_version 2.13
+
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 1
 
 Summary:	Crypt-Twofish module for perl 
-Name:		perl-%{real_name}
-Version:	2.13
-Release:	%mkrel 1
-License:	GPL or Artistic
+License:	GPL+ or Artistic
 Group:		Development/Perl
-URL:		http://search.cpan.org/dist/%{real_name}
-Source0:	%{real_name}-%{version}.tar.bz2
+Url:		http://search.cpan.org/dist/%{upstream_name}
+Source0:	http://www.cpan.org/modules/by-module/Crypt/%{upstream_name}-%{upstream_version}.tar.bz2
+
 BuildRequires:	perl-devel
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 Twofish is a 128-bit symmetric block cipher with a variable length (128, 192,
@@ -19,7 +22,7 @@ all uses, as described at http://www.counterpane.com/twofish.html.
 This module implements Twofish encryption. It supports the Crypt::CBC interface
 
 %prep
-%setup -q -n %{real_name}-%{version} 
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
@@ -39,5 +42,3 @@ rm -rf %{buildroot}
 %{perl_vendorlib}/*/Crypt/Twofish.pm
 %{perl_vendorlib}/*/auto/Crypt/Twofish
 %{_mandir}/*/*
-
-
