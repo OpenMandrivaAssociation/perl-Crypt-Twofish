@@ -1,2 +1,4 @@
+removed_sources:
+  Crypt-Twofish-2.14.tar.gz: baed59fe8ddf0626b7f0f7eca7bbacc74bb041bf
 sources:
-  "Crypt-Twofish-2.14.tar.gz": baed59fe8ddf0626b7f0f7eca7bbacc74bb041bf
+  Crypt-Twofish-2.17.tar.gz: f2659d7b9e7d7daadb3b2414174bd6ec8ac68eda

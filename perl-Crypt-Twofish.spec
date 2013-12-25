@@ -1,14 +1,14 @@
 %define modname	Crypt-Twofish
-%define modver	2.14
+%define modver 2.17
 
 Summary:	Crypt-Twofish module for perl 
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	12
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}
-Source0:	http://www.cpan.org/modules/by-module/Crypt/%{modname}-%{modver}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Crypt/Crypt-Twofish-%{modver}.tar.gz
 BuildRequires:	perl-devel
 
 %description
@@ -36,4 +36,5 @@ This module implements Twofish encryption. It supports the Crypt::CBC interface
 %{perl_vendorlib}/*/Crypt/Twofish.pm
 %{perl_vendorlib}/*/auto/Crypt/Twofish
 %{_mandir}/man3/*
+
 
