@@ -1,14 +1,14 @@
 %define modname	Crypt-Twofish
-%define modver 2.17
+%define modver 2.18
 
 Summary:	Crypt-Twofish module for perl 
 Name:		perl-%{modname}
-Version:	%perl_convert_version %{modver}
-Release:	8
+Version:	%{modver}
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{modname}
-Source0:	http://www.cpan.org/modules/by-module/Crypt/Crypt-Twofish-%{modver}.tar.gz
+Url:		https://metacpan.org/dist/Crypt-Twofish
+Source0:	https://cpan.metacpan.org/authors/id/A/AM/AMS/Crypt-Twofish-%{modver}.tar.gz
 BuildRequires:	make
 BuildRequires:	perl-devel
 
